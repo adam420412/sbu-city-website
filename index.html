@@ -863,16 +863,20 @@ body.on-dark .spotlight{opacity:1}
   </div>
 </section>
 
-<!-- ===== CINEMATIC DRONE FLYTHROUGH ===== -->
-<section class="cine" id="wideo">
-  <div class="cine-sticky">
-    <video id="cineVideo" muted playsinline preload="auto" poster="assets/img/aerial-01.jpg">
-      <source src="assets/video/hero.mp4" type="video/mp4">
-    </video>
-    <div class="cine-veil"></div>
-    <div class="cine-hint">06 — INWESTYCJA Z LOTU PTAKA · PRZEWIŃ, ABY LECIEĆ</div>
-    <div class="cine-cap"><div class="k">Z lotu ptaka</div><h2>Zobacz SBU CITY z drona</h2></div>
-    <div class="cine-prog"><span id="cineProg"></span></div>
+<!-- ===== VIDEO ===== -->
+<section class="sec paper2" id="wideo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="lhs"><span class="kicker">06 — Inwestycja z lotu ptaka</span><h2>Zobacz SBU CITY z drona</h2></div>
+      <div class="rhs">Nagranie z realizacji w Zabrzu, marzec 2026. Dwie hale, plac manewrowy i układ modułów widoczne z powietrza.</div>
+    </div>
+    <div class="videoframe reveal">
+      <span class="vlabel">● REC — KAM / HALA ZAB 2026</span>
+      <video id="dronVideo" playsinline preload="none" poster="assets/img/aerial-01.jpg" controls>
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="playbtn" id="playBtn"><div class="circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+    </div>
   </div>
 </section>
 
@@ -1338,28 +1342,12 @@ document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
   if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
 }));
 
-/* ---------- cinematic scroll-scrub drone flythrough ---------- */
+/* ---------- video play button ---------- */
 (function(){
-  const sec=$('wideo'),v=$('cineVideo'),prog=$('cineProg');if(!sec||!v)return;
-  const desktop=matchMedia('(min-width:1000px)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches;
-  if(!desktop){sec.classList.add('cine-static');v.setAttribute('controls','');return;}
-  let dur=0;const setDur=()=>{dur=v.duration||0;};
-  v.addEventListener('loadedmetadata',setDur);v.addEventListener('durationchange',setDur);
-  v.play().then(()=>{v.pause();v.currentTime=0;}).catch(()=>{});
-  // graceful fallback: if the video can't load, don't leave a tall dead scroll area
-  const toStatic=()=>{sec.classList.add('cine-static');v.setAttribute('controls','');};
-  v.addEventListener('error',toStatic);
-  setTimeout(()=>{if(!dur||!isFinite(dur))toStatic();},3500);
-  let ticking=false;
-  function upd(){
-    ticking=false;
-    const r=sec.getBoundingClientRect(),total=sec.offsetHeight-innerHeight;
-    const p=Math.min(1,Math.max(0,(-r.top)/(total||1)));
-    if(dur>0){const tgt=p*(dur-0.05);if(Math.abs(v.currentTime-tgt)>0.03){try{v.currentTime=tgt;}catch(e){}}}
-    if(prog)prog.style.width=(p*100)+'%';
-  }
-  addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
-  v.load();upd();
+  const dv=$('dronVideo'),pb=$('playBtn');if(!dv||!pb)return;
+  pb.addEventListener('click',()=>{dv.play();pb.classList.add('hide');});
+  dv.addEventListener('play',()=>pb.classList.add('hide'));
+  dv.addEventListener('pause',()=>{if(dv.currentTime>0&&!dv.ended)pb.classList.remove('hide');});
 })();
 
 /* ---------- floor plan tabs ---------- */
