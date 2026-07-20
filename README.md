@@ -1,6 +1,6 @@
-# SBU CITY — strona inwestycji
+# CITY SBU — strona inwestycji
 
-Strona internetowa (one-page) nowoczesnej inwestycji **SBU CITY** — kompleksu modułów
+Strona internetowa (one-page) nowoczesnej inwestycji **CITY SBU** — kompleksu modułów
 magazynowo-biurowych w formacie *Small Business Unit* w Zabrzu przy ul. Lompy.
 
 Statyczna strona bez frameworków i bez procesu budowania — czysty **HTML + CSS + JavaScript**.
@@ -42,8 +42,8 @@ Tłumaczenia EN znajdują się w obiekcie `T` w skrypcie; aby dodać/poprawić t
 
 ## Konfiguracja przed publikacją
 
-Dane firmy i kontaktowe są już **wpisane** (CITY SBU Sp. z o.o., kontakty: Wojciech Urbańczyk,
-Justyna Bańczyk). Do ustawienia zostają:
+Dane firmy i kontaktowe są już **wpisane** (City SBU Sp. z o.o.; komercjalizacja: Karolina
+Pawełczak, kontakt inwestora: Wojciech Urbańczyk — tylko e-mail). Do ustawienia zostają:
 
 | Co | Gdzie | Obecnie |
 |----|-------|---------|
@@ -52,8 +52,8 @@ Justyna Bańczyk). Do ustawienia zostają:
 | **Data / drobne pola** | `polityka-prywatnosci.html`, `regulamin.html` (pola `[…]`) | do uzupełnienia + weryfikacja prawna |
 
 **Formularz — darmowy klucz Web3Forms (ok. 30 s):** wejdź na https://web3forms.com,
-podaj e-mail odbiorczy (np. `w.urbanczyk@kaminski.org.pl`), skopiuj `Access Key`
-i wklej do `WEB3FORMS_KEY`. Bez klucza formularz działa przez `mailto:` (wysyła do Wojciecha, DW do Justyny).
+podaj e-mail odbiorczy (np. `kontakt@karolinapawelczak.pl`), skopiuj `Access Key`
+i wklej do `WEB3FORMS_KEY`. Bez klucza formularz działa przez `mailto:` (wysyła do Karoliny, DW do Wojciecha).
 
 > **Dokumenty prawne** (`polityka-prywatnosci.html`, `regulamin.html`, klauzula RODO w formularzu)
 > to **wzory/szkice** przygotowane na podstawie przekazanych danych — przed publikacją należy je
@@ -80,9 +80,8 @@ sbu-city-website/
 │   │   ├── hala-a.jpg / .png
 │   │   └── hala-b.jpg / .png
 │   ├── downloads/              # pliki PDF do pobrania
-│   │   ├── SBU-CITY_karta-oferty.pdf
-│   │   ├── SBU-CITY_rzut_hala-A.pdf / hala-B.pdf
-│   │   └── SBU-CITY_schemat-dostepnosci.pdf
+│   │   ├── CITY-SBU_rzut_hala-A.pdf / hala-B.pdf
+│   │   └── CITY-SBU_schemat-dostepnosci.pdf
 │   └── video/
 │       ├── hero.mp4            # wideo z drona 720p, wyciszone, od 15 s (~14 MB)
 │       └── poster.jpg          # klatka-poster do wideo
@@ -124,7 +123,7 @@ Status dostępności ustawia się w obiekcie `MOD` w `index.html` (`status: 'fre
 ## Do uzupełnienia przed publikacją (TODO)
 
 - [ ] Prawdziwe **dane kontaktowe** (e-mail, telefon) — obecnie placeholdery `kontakt@sbucity.pl`, `+48 000 000 000`
-- [ ] **Logo** SBU CITY (obecnie sygnet tekstowy)
+- [ ] **Logo** CITY SBU (obecnie sygnet tekstowy)
 - [ ] Backend / usługa formularza (np. Formspree) zamiast `mailto:` — jeśli potrzebna wysyłka bez klienta poczty
 - [ ] Potwierdzenie parametrów technicznych modułu (wysokość, bramy, media)
 - [ ] Domena i hosting (np. GitHub Pages)
@@ -134,4 +133,4 @@ Status dostępności ustawia się w obiekcie `MOD` w `index.html` (`status: 'fre
 
 ---
 
-© 2026 SBU CITY. Realizacja: Kamiński. Wszelkie prawa zastrzeżone.
+© 2026 CITY SBU. Realizacja: Kamiński. Wszelkie prawa zastrzeżone.

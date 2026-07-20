@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realizacja inwestycji — CITY SBU | Zabrze, ul. Lompy</title>
+<meta name="description" content="Postęp budowy CITY SBU w Zabrzu przy ul. Lompy — film z drona (czerwiec 2026), porównanie przed i po, oś czasu inwestycji oraz galeria zdjęć z realizacji.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f0f10">
+<link rel="canonical" href="https://sbucity.pl/realizacja.html">
+<meta property="og:title" content="Realizacja inwestycji — CITY SBU, Zabrze">
+<meta property="og:description" content="Film z drona, przed i po, oś czasu budowy i galeria zdjęć. Stan: czerwiec 2026.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:url" content="https://sbucity.pl/realizacja.html">
+<meta property="og:site_name" content="CITY SBU">
+<meta property="og:image" content="https://sbucity.pl/assets/img/june-02.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f0f10;
+  --ink-soft:#16161a;
+  --paper:#f5f2ec;
+  --paper-2:#efeae1;
+  --concrete:#dcd6ca;
+  --line:#1f1f24;
+  --line-soft:#d8d1c4;
+  --muted:#6d6a63;
+  --muted-dark:#9a978f;
+  --red:#df3b2c;
+  --red-deep:#c22b1e;
+  --steel:#3b4a55;
+  --gold:#e6b64c;
+  --ok:#3f9b6a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--red);color:#fff}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.03;letter-spacing:-.015em}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+section{position:relative}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:12px;font-weight:500}
+.kicker::before{content:"";width:34px;height:1px;background:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;padding:16px 26px;border:1px solid var(--ink);cursor:pointer;transition:.25s cubic-bezier(.2,.7,.2,1);background:transparent;color:var(--ink)}
+.btn svg{width:15px;height:15px;transition:transform .25s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-fill{background:var(--ink);color:var(--paper)}
+.btn-fill:hover{background:var(--red);border-color:var(--red)}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn-outline-light{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-outline-light:hover{background:#fff;color:var(--ink);border-color:#fff}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+[data-delay="1"]{transition-delay:.08s}[data-delay="2"]{transition-delay:.16s}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:210;background:var(--ink);color:#fff;padding:12px 18px;font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.08em}
+.skip-link:focus{left:8px;top:8px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1!important;transform:none!important}
+}
+/* NAV */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:.35s}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px;border-bottom:1px solid transparent;transition:.35s}
+header.nav.scrolled{background:rgba(245,242,236,.86);backdrop-filter:blur(14px) saturate(1.2)}
+header.nav.scrolled .nav-inner{border-color:var(--line-soft)}
+.brand{display:flex;flex-direction:column;line-height:1;color:#fff;transition:.35s}
+header.nav.scrolled .brand{color:var(--ink)}
+.brand b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:-.02em;display:flex;align-items:center;gap:.28em}
+.brand b i{width:9px;height:9px;background:var(--red);display:inline-block;transform:rotate(45deg);font-style:normal}
+.brand span{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.3em;opacity:.72;margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82);transition:.2s;position:relative}
+header.nav.scrolled .nav-links a{color:var(--muted)}
+.nav-links a:not(.navbtn):hover{color:#fff}
+header.nav.scrolled .nav-links a:not(.navbtn):hover{color:var(--ink)}
+.nav-links a:not(.navbtn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--red);transition:.25s}
+.nav-links a:not(.navbtn):hover::after{width:100%}
+.nav-links a.current{color:#fff}
+header.nav.scrolled .nav-links a.current{color:var(--ink)}
+.nav-links a.current::after{width:100%}
+.navbtn{border:1px solid rgba(255,255,255,.5);color:#fff;padding:11px 20px}
+header.nav.scrolled .navbtn{border-color:var(--ink);color:var(--ink)}
+.navbtn:hover{background:var(--red);border-color:var(--red);color:#fff!important}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.1em;background:none;border:1px solid rgba(255,255,255,.4);color:rgba(255,255,255,.82);padding:9px 12px;cursor:pointer;transition:.2s}
+header.nav.scrolled .langbtn{border-color:var(--line-soft);color:var(--muted)}
+.langbtn:hover{color:#fff;border-color:#fff}
+header.nav.scrolled .langbtn:hover{color:var(--ink);border-color:var(--ink)}
+.burger{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:6px;padding:6px}
+.burger span{width:26px;height:2px;background:#fff;display:block;transition:.3s}
+header.nav.scrolled .burger span{background:var(--ink)}
+/* PAGE HERO */
+.phero{background:var(--ink);color:var(--paper);padding:170px 0 72px;position:relative;overflow:hidden}
+.phero::after{content:"";position:absolute;top:-60px;right:-60px;width:240px;height:240px;border:2px solid rgba(223,59,44,.35);transform:rotate(45deg);pointer-events:none}
+.phero h1{color:#fff;font-size:clamp(2.4rem,5.5vw,4.6rem);letter-spacing:-.03em;max-width:18ch;margin:22px 0 20px}
+.phero .lead{color:var(--muted-dark);font-size:clamp(1rem,1.4vw,1.18rem);max-width:62ch}
+.phero .meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:36px;font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-dark)}
+.phero .meta b{color:var(--red);font-weight:500}
+/* sections */
+.sec{padding:110px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sec-head .lhs h2{font-size:clamp(2.1rem,4.2vw,3.3rem);margin-top:20px}
+.sec-head .rhs{color:var(--muted);font-size:1.05rem;padding-bottom:6px}
+.sec.dark{background:var(--ink);color:var(--paper)}
+.sec.dark .sec-head .rhs{color:var(--muted-dark)}
+.sec.dark h2,.sec.dark h3{color:#fff}
+.sec.paper2{background:var(--paper-2)}
+/* video */
+.videoframe{position:relative;border:1px solid var(--line);background:#000;overflow:hidden}
+.videoframe video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.videoframe .vlabel{position:absolute;top:0;left:0;background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.14em;padding:9px 14px;text-transform:uppercase;z-index:2}
+.playbtn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,11,.28);cursor:pointer;z-index:2;transition:.3s}
+.playbtn.hide{opacity:0;pointer-events:none}
+.playbtn .circle{width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;transition:.3s}
+.playbtn:hover .circle{background:var(--red);border-color:var(--red);transform:scale(1.06)}
+.playbtn svg{width:26px;height:26px;fill:#fff;margin-left:4px}
+/* before/after */
+.ba-wrap{position:relative}
+.ba{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line);user-select:none;touch-action:pan-y;background:#000;cursor:ew-resize}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .divider{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:52px;height:52px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.45);pointer-events:none}
+.ba .knob svg{width:22px;height:22px;stroke:var(--ink);stroke-width:2;fill:none}
+.ba .tag{position:absolute;top:16px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;background:rgba(10,10,11,.62);color:#fff;backdrop-filter:blur(4px);pointer-events:none}
+.ba .tag b{color:var(--red);font-weight:600}
+.ba .tag.l{left:16px}.ba .tag.r{right:16px}
+.ba-cap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:var(--muted)}
+/* timeline */
+.tl-head{display:flex;align-items:baseline;gap:16px;margin:0 0 30px}
+.tl-head h3{font-size:1.7rem}
+.tl-head span{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-dark)}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.tl .item{position:relative}
+.tl .item .ph{aspect-ratio:3/2;overflow:hidden;border:1px solid var(--line-soft);position:relative}
+.tl .item .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.tl .item:hover .ph img{transform:scale(1.05)}
+.tl .item .dot{position:absolute;top:-34px;left:0;width:13px;height:13px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(223,59,44,.16)}
+.tl .item::before{content:"";position:absolute;top:-28px;left:13px;right:-20px;height:1px;background:var(--line-soft)}
+.tl .item:last-child::before{display:none}
+.tl .item .date{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.1em;color:var(--red);margin:16px 0 6px}
+.tl .item h4{font-size:1.15rem;margin-bottom:6px}
+.tl .item p{font-size:.9rem;color:var(--muted)}
+.tl-rail{position:absolute;top:-28px;left:0;right:0;height:1px;background:var(--line-soft);z-index:-1}
+.tl-wrap{padding-top:34px}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:8px}
+.gallery figure{overflow:hidden;position:relative;cursor:pointer;background:#111}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.7s cubic-bezier(.2,.7,.2,1);filter:grayscale(.06)}
+.gallery figure:hover img{transform:scale(1.08);filter:grayscale(0)}
+.gallery figure .plus{position:absolute;right:12px;bottom:12px;color:#fff;opacity:0;transition:.3s;font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.1em}
+.gallery figure:hover .plus{opacity:1}
+.gs-2w{grid-column:span 2}.gs-3w{grid-column:span 3}.gs-6w{grid-column:span 6}.gs-2h{grid-row:span 2}
+.lightbox{position:fixed;inset:0;background:rgba(8,8,9,.95);z-index:120;display:none;align-items:center;justify-content:center;padding:34px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:86vh}
+.lightbox .lx{position:absolute;top:24px;right:30px;color:#fff;font-size:1.8rem;cursor:pointer;font-family:'IBM Plex Mono',monospace}
+.lightbox .nav-lx{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2.2rem;cursor:pointer;padding:20px;opacity:.7;transition:.2s;user-select:none}
+.lightbox .nav-lx:hover{opacity:1}
+.lightbox .prev{left:14px}.lightbox .next{right:14px}
+/* CTA band */
+.ctaband{background:var(--ink);color:var(--paper);padding:84px 0;border-top:1px solid #26262b}
+.ctaband .inner{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.ctaband h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.8rem);max-width:22ch}
+.ctaband .btns{display:flex;gap:14px;flex-wrap:wrap}
+/* FOOTER */
+footer{background:var(--ink);color:var(--muted-dark);padding:80px 0 34px;border-top:1px solid #26262b}
+.foot-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:52px;border-bottom:1px solid #26262b}
+.foot-top h4{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:20px;font-weight:500}
+.foot-top a{display:block;padding:6px 0;color:#cfccc6;transition:.2s;font-size:.95rem}
+.foot-top a:hover{color:var(--red)}
+.foot-brand b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.7rem;color:#fff;display:flex;align-items:center;gap:.3em}
+.foot-brand b i{width:11px;height:11px;background:var(--red);transform:rotate(45deg);display:inline-block}
+.foot-brand p{margin-top:18px;max-width:34ch;font-size:.95rem}
+.foot-legal{padding-top:24px;font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.04em;color:#4f4c47;line-height:1.7}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:16px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#5f5c56}
+.foot-bottom a{color:#8a877f}
+/* cookie */
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:120;background:var(--ink);color:var(--paper);border:1px solid #2a2a2e;padding:20px 22px;display:none;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;max-width:760px;margin:0 auto;box-shadow:0 20px 50px -20px rgba(0,0,0,.6)}
+.cookie.show{display:flex}
+.cookie p{font-size:.86rem;color:#cfccc6;flex:1;min-width:240px}
+.cookie a{color:#fff;text-decoration:underline}
+.cookie .ck-btns{display:flex;gap:10px;flex-shrink:0}
+.cookie .btn{padding:11px 18px;font-size:.72rem}
+/* scroll progress */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--red),#ff8a7d);z-index:90;transition:width .08s linear}
+/* responsive */
+@media(max-width:1000px){
+  .wrap{padding:0 28px}
+  .sec{padding:88px 0}
+  .sec-head{grid-template-columns:1fr;gap:16px;margin-bottom:44px}
+  .nav-links{display:none}
+  .burger{display:flex}
+  .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:4px;background:var(--ink);padding:16px 28px 22px;border-bottom:1px solid #26262b}
+  .nav-links.open a{color:#cfccc6!important;padding:12px 0;width:100%}
+  .nav-links.open .navbtn{margin-top:8px;padding:14px 20px;text-align:center;border-color:var(--red);color:#fff!important}
+  .tl{grid-template-columns:1fr 1fr;gap:28px}
+  .tl-rail,.tl .item::before,.tl .item .dot{display:none}
+  .gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:180px}
+  .gallery figure{grid-column:auto;grid-row:auto}
+  .gallery figure:first-child{grid-column:1/-1;grid-row:span 1;aspect-ratio:auto}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  .sec{padding:64px 0}
+  .phero{padding:150px 0 56px}
+  .tl{grid-template-columns:1fr}
+  .ba .knob{width:44px;height:44px}
+  .ba .tag{font-size:.6rem;padding:6px 9px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:132px}
+  .gallery figure{grid-column:auto;grid-row:auto}
+  .gallery figure:first-child{grid-column:1/-1;grid-row:span 2}
+  .foot-top{grid-template-columns:1fr 1fr;gap:32px}
+  .cookie{left:10px;right:10px;bottom:10px;padding:16px}
+  .cookie .ck-btns{width:100%}.cookie .ck-btns .btn{flex:1}
+  .ctaband .inner{justify-content:flex-start}
+}
+@media(max-width:380px){.foot-top{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#film">Przejdź do treści</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><b><i></i>CITY&nbsp;SBU</b><span>ZABRZE · UL. LOMPY</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nawigacja główna">
+      <a href="index.html#projekt">Projekt</a>
+      <a href="index.html#atuty">Atuty</a>
+      <a href="index.html#modul">Specyfikacja</a>
+      <a href="index.html#dostepnosc">Dostępność</a>
+      <a href="realizacja.html" class="current" aria-current="page">Realizacja</a>
+      <a href="index.html#lokalizacja">Lokalizacja</a>
+      <a href="index.html#faq">FAQ</a>
+      <button class="langbtn" id="langBtn" aria-label="Change language">EN</button>
+      <a href="index.html#kontakt" class="navbtn">Zapytaj o ofertę</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="phero">
+  <div class="wrap">
+    <span class="kicker">Realizacja inwestycji</span>
+    <h1>Od pustej działki do gotowych hal</h1>
+    <p class="lead">Film z drona, porównanie przed i po, oś czasu budowy oraz pełna dokumentacja zdjęciowa CITY SBU w Zabrzu przy ul. Lompy.</p>
+    <div class="meta"><span><b>STAN:</b> CZERWIEC 2026</span><span><b>ETAP:</b> ELEWACJE I DACHY WYKONANE</span><span><b>TRWA:</b> KOMERCJALIZACJA</span></div>
+  </div>
+</section>
+
+<!-- ===== 01 FILM Z DRONA ===== -->
+<section class="sec" id="film">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="lhs"><span class="kicker">01 — Inwestycja z lotu ptaka</span><h2>Zobacz CITY SBU z drona</h2></div>
+      <div class="rhs">Nagranie z czerwca 2026 r. Dwie hale z gotowymi elewacjami, plac manewrowy i układ modułów — widziane z powietrza.</div>
+    </div>
+    <div class="videoframe reveal">
+      <span class="vlabel">● REC — CZERWIEC 2026</span>
+      <video id="dronVideo" playsinline preload="none" poster="assets/video/film-poster.jpg" controls>
+        <source src="assets/video/dron-2026-06.mp4" type="video/mp4">
+      </video>
+      <div class="playbtn" id="playBtn"><div class="circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 PRZED I PO ===== -->
+<section class="sec paper2" id="postep">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="lhs"><span class="kicker">02 — Postęp inwestycji</span><h2>Od pustej działki do hal</h2></div>
+      <div class="rhs">Zobacz, jak zmienił się teren przy ul. Lompy — przeciągnij suwak, aby porównać stan sprzed budowy ze zdjęciem z czerwca 2026 r.</div>
+    </div>
+    <div class="ba-wrap reveal">
+      <div class="ba" id="ba">
+        <img loading="lazy" decoding="async" class="before" src="assets/img/before.jpg" alt="Teren przed budową — 2025">
+        <img loading="lazy" decoding="async" class="after" src="assets/img/after.jpg" alt="Realizacja CITY SBU — czerwiec 2026">
+        <span class="tag l"><b>2025</b> · przed budową</span>
+        <span class="tag r"><b>2026</b> · czerwiec</span>
+        <div class="divider"></div>
+        <div class="knob"><svg viewBox="0 0 24 24"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></div>
+      </div>
+      <div class="ba-cap"><span>↔ Przeciągnij, aby porównać</span><span>Teren: Zabrze, ul. Lompy · paź 2025 → cze 2026</span></div>
+    </div>
+
+    <div class="tl-wrap">
+      <div class="tl-head reveal" style="margin-top:56px"><h3>Oś czasu</h3><span>Kolejne etapy realizacji</span></div>
+      <div class="tl reveal">
+        <div class="tl-rail"></div>
+        <div class="item"><span class="dot"></span><div class="ph"><img loading="lazy" decoding="async" src="assets/img/stage1.jpg" alt="Teren przed budową"></div><div class="date">PAŹDZIERNIK 2025</div><h4>Teren przed budową</h4><p>Uporządkowanie i przygotowanie działki pod inwestycję.</p></div>
+        <div class="item"><span class="dot"></span><div class="ph"><img loading="lazy" decoding="async" src="assets/img/stage2.jpg" alt="Niwelacja terenu"></div><div class="date">LISTOPAD 2025</div><h4>Niwelacja terenu</h4><p>Wyrównanie i przygotowanie podłoża pod konstrukcję.</p></div>
+        <div class="item"><span class="dot"></span><div class="ph"><img loading="lazy" decoding="async" src="assets/img/stage3.jpg" alt="Konstrukcja hal"></div><div class="date">MARZEC 2026</div><h4>Konstrukcja hal</h4><p>Montaż konstrukcji stalowej hal nr 1 i nr 2.</p></div>
+        <div class="item"><span class="dot"></span><div class="ph"><img loading="lazy" decoding="async" src="assets/img/june-11.jpg" alt="Elewacje i dachy hal"></div><div class="date">CZERWIEC 2026</div><h4>Elewacje i dachy</h4><p>Obiekt nabiera docelowego wyglądu. Trwa komercjalizacja modułów.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 GALERIA ===== -->
+<section class="sec dark" id="galeria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="lhs"><span class="kicker">03 — Galeria</span><h2>Dokumentacja realizacji</h2></div>
+      <div class="rhs">Fotografie z drona i z poziomu ulicy, czerwiec 2026. Kliknij, aby powiększyć.</div>
+    </div>
+    <div class="gallery reveal" id="gallery">
+      <figure class="gs-3w gs-2h"><img loading="lazy" decoding="async" src="assets/img/june-06.jpg" alt="CITY SBU — widok z drona na hale i okolicę"><span class="plus">[ 01 ]</span></figure>
+      <figure class="gs-3w"><img loading="lazy" decoding="async" src="assets/img/june-02.jpg" alt="CITY SBU — hale z lotu ptaka"><span class="plus">[ 02 ]</span></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/img/june-05.jpg" alt="CITY SBU — widok od strony ulicy"><span class="plus">[ 03 ]</span></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/img/june-07.jpg" alt="CITY SBU — elewacja hali"><span class="plus">[ 04 ]</span></figure>
+      <figure><img loading="lazy" decoding="async" src="assets/img/june-03.jpg" alt="CITY SBU — inwestycja na tle miasta"><span class="plus">[ 05 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-01.jpg" alt="CITY SBU — dwie hale z góry"><span class="plus">[ 06 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-08.jpg" alt="CITY SBU — widok boczny hal"><span class="plus">[ 07 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-10.jpg" alt="CITY SBU — hale na tle panoramy"><span class="plus">[ 08 ]</span></figure>
+      <figure class="gs-3w"><img loading="lazy" decoding="async" src="assets/img/june-11.jpg" alt="CITY SBU — plac między halami"><span class="plus">[ 09 ]</span></figure>
+      <figure class="gs-3w"><img loading="lazy" decoding="async" src="assets/img/june-04.jpg" alt="CITY SBU — hale z bliska"><span class="plus">[ 10 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-09.jpg" alt="Węzeł drogowy w pobliżu CITY SBU"><span class="plus">[ 11 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-12.jpg" alt="Trasa DTŚ w pobliżu inwestycji"><span class="plus">[ 12 ]</span></figure>
+      <figure class="gs-2w"><img loading="lazy" decoding="async" src="assets/img/june-13.jpg" alt="CITY SBU — otoczenie inwestycji"><span class="plus">[ 13 ]</span></figure>
+      <figure class="gs-6w gs-2h"><img loading="lazy" decoding="async" src="assets/img/june-14.jpg" alt="CITY SBU — panorama z trasami dojazdowymi"><span class="plus">[ 14 ]</span></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="ctaband">
+  <div class="wrap inner">
+    <h2>Trwa komercjalizacja — wybierz swój moduł</h2>
+    <div class="btns">
+      <a href="index.html#dostepnosc" class="btn btn-red">Sprawdź dostępność <svg><use href="#i-arrow"/></svg></a>
+      <a href="index.html#kontakt" class="btn btn-outline-light">Skontaktuj się</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html"><b><i></i>CITY SBU</b></a>
+        <p>Nowoczesne moduły magazynowo-biurowe w formacie Small Business Unit. Magazyn, biuro i zaplecze operacyjne w jednym miejscu.</p>
+      </div>
+      <div><h4>Nawigacja</h4><a href="index.html#projekt">O projekcie</a><a href="index.html#atuty">Atuty</a><a href="index.html#modul">Specyfikacja</a><a href="index.html#dostepnosc">Dostępność</a><a href="realizacja.html">Realizacja inwestycji</a></div>
+      <div><h4>Inwestycja</h4><a href="realizacja.html">Postęp budowy</a><a href="index.html#lokalizacja">Lokalizacja</a><a href="index.html#pobierz">Do pobrania</a><a href="index.html#faq">FAQ</a><a href="index.html#kontakt">Kontakt</a></div>
+      <div><h4>Kontakt</h4><a href="tel:+48663582410">663 582 410 — K. Pawełczak</a><a href="mailto:kontakt@karolinapawelczak.pl">kontakt@karolinapawelczak.pl</a><a href="mailto:w.urbanczyk@kaminski.org.pl">w.urbanczyk@kaminski.org.pl</a><a>Zabrze, ul. Lompy</a><a href="polityka-prywatnosci.html">Polityka prywatności</a><a href="regulamin.html">Regulamin</a></div>
+    </div>
+    <div class="foot-legal">City SBU Sp. z o.o. · ul. Wieniawskiego 18, 41-506 Chorzów · KRS 0001188915 · NIP 6272801556 · REGON 542462525 · kapitał zakładowy 5 000,00 zł</div>
+    <div class="foot-bottom">
+      <div>© 2026 City SBU Sp. z o.o. — WSZELKIE PRAWA ZASTRZEŻONE</div>
+      <div>REALIZACJA: <a href="https://kaminski.org.pl" target="_blank" rel="noopener">KAMIŃSKI</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox"><span class="lx" id="lxClose">✕ ESC</span><span class="nav-lx prev" id="lxPrev">‹</span><img id="lxImg" src="" alt=""><span class="nav-lx next" id="lxNext">›</span></div>
+
+<!-- ===== COOKIE BANNER ===== -->
+<div class="cookie" id="cookie">
+  <p>Ta strona używa plików cookie niezbędnych do jej działania oraz — za Twoją zgodą — do celów analitycznych. <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+  <div class="ck-btns">
+    <button class="btn btn-outline-light" id="ckMin">Tylko niezbędne</button>
+    <button class="btn btn-red" id="ckAll">Akceptuję</button>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+
+/* ---------- i18n (PL / EN) ---------- */
+let LANG='pl';
+const T={
+"Projekt":"Project","Atuty":"Highlights","Specyfikacja":"Specification","Dostępność":"Availability","Realizacja":"Construction","Lokalizacja":"Location","Zapytaj o ofertę":"Request an offer",
+"Przejdź do treści":"Skip to content","Realizacja inwestycji":"Construction progress","Od pustej działki do gotowych hal":"From an empty plot to finished halls",
+"Film z drona, porównanie przed i po, oś czasu budowy oraz pełna dokumentacja zdjęciowa CITY SBU w Zabrzu przy ul. Lompy.":"Drone footage, a before-and-after comparison, the construction timeline and full photo documentation of CITY SBU in Zabrze, ul. Lompy.",
+"STAN:":"AS OF:","CZERWIEC 2026":"JUNE 2026","ETAP:":"STAGE:","ELEWACJE I DACHY WYKONANE":"FACADES & ROOFS COMPLETED","TRWA:":"ONGOING:","KOMERCJALIZACJA":"COMMERCIALISATION",
+"01 — Inwestycja z lotu ptaka":"01 — A bird's-eye view","Zobacz CITY SBU z drona":"See CITY SBU from a drone",
+"Nagranie z czerwca 2026 r. Dwie hale z gotowymi elewacjami, plac manewrowy i układ modułów — widziane z powietrza.":"Footage from June 2026. Two halls with finished facades, the manoeuvring yard and the unit layout seen from the air.",
+"02 — Postęp inwestycji":"02 — Construction progress","Od pustej działki do hal":"From an empty plot to halls",
+"Zobacz, jak zmienił się teren przy ul. Lompy — przeciągnij suwak, aby porównać stan sprzed budowy ze zdjęciem z czerwca 2026 r.":"See how the site on ul. Lompy has changed — drag the slider to compare the pre-construction state with the June 2026 photo.",
+"· przed budową":"· before construction","· czerwiec":"· June","↔ Przeciągnij, aby porównać":"↔ Drag to compare",
+"Teren: Zabrze, ul. Lompy · paź 2025 → cze 2026":"Site: Zabrze, ul. Lompy · Oct 2025 → Jun 2026",
+"Oś czasu":"Timeline","Kolejne etapy realizacji":"Successive construction stages",
+"PAŹDZIERNIK 2025":"OCTOBER 2025","Teren przed budową":"Site before construction","Uporządkowanie i przygotowanie działki pod inwestycję.":"Clearing and preparing the plot for the development.",
+"LISTOPAD 2025":"NOVEMBER 2025","Niwelacja terenu":"Site levelling","Wyrównanie i przygotowanie podłoża pod konstrukcję.":"Levelling and preparing the ground for the structure.",
+"MARZEC 2026":"MARCH 2026","Konstrukcja hal":"Hall structure","Montaż konstrukcji stalowej hal nr 1 i nr 2.":"Erection of the steel structure of halls no. 1 and no. 2.",
+"Elewacje i dachy":"Facades & roofs","Obiekt nabiera docelowego wyglądu. Trwa komercjalizacja modułów.":"The buildings are taking their final shape. Unit leasing is underway.",
+"03 — Galeria":"03 — Gallery","Dokumentacja realizacji":"Construction documentation",
+"Fotografie z drona i z poziomu ulicy, czerwiec 2026. Kliknij, aby powiększyć.":"Drone and street-level photographs, June 2026. Click to enlarge.",
+"Trwa komercjalizacja — wybierz swój moduł":"Leasing is underway — choose your unit",
+"Sprawdź dostępność":"Check availability","Skontaktuj się":"Get in touch",
+"Nowoczesne moduły magazynowo-biurowe w formacie Small Business Unit. Magazyn, biuro i zaplecze operacyjne w jednym miejscu.":"Modern warehouse-and-office units in the Small Business Unit format. Warehouse, office and operational back-office in one place.",
+"Nawigacja":"Navigation","O projekcie":"About the project","Postęp budowy":"Construction updates","Inwestycja":"Development","Do pobrania":"Downloads","Kontakt":"Contact",
+"Polityka prywatności":"Privacy policy","Regulamin":"Terms of use",
+"© 2026 City SBU Sp. z o.o. — WSZELKIE PRAWA ZASTRZEŻONE":"© 2026 City SBU Sp. z o.o. — ALL RIGHTS RESERVED","REALIZACJA:":"DEVELOPED BY:",
+"Ta strona używa plików cookie niezbędnych do jej działania oraz — za Twoją zgodą — do celów analitycznych.":"This site uses cookies necessary for its operation and — with your consent — for analytics.",
+"Akceptuję":"Accept","Tylko niezbędne":"Only necessary"
+};
+const t=s=>(LANG==='en'&&T[s]!==undefined)?T[s]:s;
+const origVal=new WeakMap();
+function walkText(fn){
+  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(n){
+    const p=n.parentNode;if(!p)return NodeFilter.FILTER_REJECT;
+    const tag=p.nodeName;
+    if(tag==='SCRIPT'||tag==='STYLE'||tag==='NOSCRIPT')return NodeFilter.FILTER_REJECT;
+    if(p.closest&&p.closest('svg'))return NodeFilter.FILTER_REJECT;
+    if(!n.nodeValue.trim())return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT;
+  }});
+  let n;while(n=w.nextNode())fn(n);
+}
+function setLang(lang){
+  LANG=lang;document.documentElement.lang=lang;
+  walkText(n=>{
+    if(!origVal.has(n))origVal.set(n,n.nodeValue);
+    const o=origVal.get(n);
+    if(lang==='pl'){n.nodeValue=o;return;}
+    const key=o.replace(/ /g,' ').trim();
+    const en=T[key];if(en===undefined)return;
+    n.nodeValue=o.match(/^\s*/)[0]+en+o.match(/\s*$/)[0];
+  });
+  $('langBtn').textContent=lang==='en'?'PL':'EN';
+  try{localStorage.setItem('sbu_lang',lang);}catch(e){}
+}
+$('langBtn').addEventListener('click',()=>setLang(LANG==='en'?'pl':'en'));
+try{if(localStorage.getItem('sbu_lang')==='en')setLang('en');}catch(e){}
+
+/* ---------- NAV scroll + burger ---------- */
+const nav=$('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+const burger=$('burger'),navLinks=$('navLinks');
+burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+/* ---------- scroll progress ---------- */
+const sp=$('scrollProgress');
+const onScroll=()=>{const h=document.documentElement,max=h.scrollHeight-h.clientHeight;sp.style.width=(max>0?h.scrollTop/max*100:0)+'%';};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* ---------- reveal on scroll ---------- */
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+
+/* ---------- video play button ---------- */
+(function(){
+  const dv=$('dronVideo'),pb=$('playBtn');if(!dv||!pb)return;
+  pb.addEventListener('click',()=>{dv.play();pb.classList.add('hide');});
+  dv.addEventListener('play',()=>pb.classList.add('hide'));
+  dv.addEventListener('pause',()=>{if(dv.currentTime>0&&!dv.ended)pb.classList.remove('hide');});
+})();
+
+/* ---------- before/after slider ---------- */
+(function(){
+  const ba=$('ba');if(!ba)return;
+  let dragging=false;
+  const setPos=(clientX)=>{
+    const r=ba.getBoundingClientRect();
+    let p=((clientX-r.left)/r.width)*100;
+    p=Math.max(0,Math.min(100,p));
+    ba.style.setProperty('--pos',p+'%');
+  };
+  const down=e=>{dragging=true;setPos((e.touches?e.touches[0]:e).clientX);e.preventDefault();};
+  const move=e=>{if(dragging)setPos((e.touches?e.touches[0]:e).clientX);};
+  const up=()=>dragging=false;
+  ba.addEventListener('mousedown',down);ba.addEventListener('touchstart',down,{passive:false});
+  addEventListener('mousemove',move);addEventListener('touchmove',move,{passive:false});
+  addEventListener('mouseup',up);addEventListener('touchend',up);
+})();
+
+/* ---------- lightbox ---------- */
+const imgs=[...document.querySelectorAll('#gallery img')];let li=0;
+const lb=$('lightbox'),lbi=$('lxImg');
+function show(i){li=(i+imgs.length)%imgs.length;lbi.src=imgs[li].src;lb.classList.add('open');}
+imgs.forEach((im,i)=>im.addEventListener('click',()=>show(i)));
+$('lxClose').addEventListener('click',()=>lb.classList.remove('open'));
+$('lxPrev').addEventListener('click',e=>{e.stopPropagation();show(li-1);});
+$('lxNext').addEventListener('click',e=>{e.stopPropagation();show(li+1);});
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open');});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')show(li-1);if(e.key==='ArrowRight')show(li+1);});
+
+/* ---------- cookie banner ---------- */
+(function(){
+  const ck=$('cookie');if(!ck)return;
+  let done=false;try{done=!!localStorage.getItem('sbu_cookie');}catch(e){}
+  if(!done)setTimeout(()=>ck.classList.add('show'),1400);
+  const close=v=>{try{localStorage.setItem('sbu_cookie',v);}catch(e){}ck.classList.remove('show');};
+  $('ckAll').addEventListener('click',()=>close('all'));
+  $('ckMin').addEventListener('click',()=>close('min'));
+})();
+</script>
+</body>
+</html>
