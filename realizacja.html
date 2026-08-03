@@ -76,7 +76,7 @@ header.nav.scrolled .nav-inner{border-color:var(--line-soft)}
 header.nav.scrolled .brand{color:var(--ink)}
 .brand b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:-.02em;display:flex;align-items:center;gap:.28em}
 .brand b i{width:9px;height:9px;background:var(--red);display:inline-block;transform:rotate(45deg);font-style:normal}
-.brand span{font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.14em;opacity:.72;margin-top:5px;white-space:nowrap}
+.brand span{font-family:'IBM Plex Mono',monospace;font-size:.55rem;letter-spacing:.1em;opacity:.72;margin-top:6px;white-space:nowrap}
 .nav-links{display:flex;align-items:center;gap:34px}
 .nav-links a{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82);transition:.2s;position:relative}
 header.nav.scrolled .nav-links a{color:var(--muted)}
@@ -192,6 +192,14 @@ footer{background:var(--ink);color:var(--muted-dark);padding:80px 0 34px;border-
 .cookie .btn{padding:11px 18px;font-size:.72rem}
 /* scroll progress */
 .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--red),#ff8a7d);z-index:90;transition:width .08s linear}
+
+/* ===== LOGO CITY SBU ===== */
+.logo{display:block;height:30px;width:auto;aspect-ratio:1676/561}
+.brand .logo{height:30px}
+.foot-brand .logo{height:34px}
+.pl-mark .logo{height:38px}
+@media(max-width:600px){.brand .logo{height:23px}.foot-brand .logo{height:30px}}
+
 /* responsive */
 @media(max-width:1000px){
   .wrap{padding:0 28px}
@@ -231,13 +239,42 @@ footer{background:var(--ink);color:var(--muted-dark);padding:80px 0 34px;border-
 <div class="scroll-progress" id="scrollProgress"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-logo" viewBox="0 0 1676 561"><g transform="translate(0.000000,561.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none"><path d="M65 5538 l-5 -13 2 -2730 3 -2730 8304 -3 8304 -2 13 11 14 11 -2
+2732 -3 2731 -8313 3 -8313 2 -4 -12z m16505 -2733 l0 -2615 -8190 0 -8190 0
+0 2615 0 2615 8190 0 8190 0 0 -2615z M698 5235 l-57 -14 -47 -23 -48 -22 -57
+-57 -56 -56 -34 -69 -34 -69 0 -755 0 -755 24 -45 24 -45 37 -55 37 -55 46
+-33 46 -33 38 -16 38 -16 60 -13 60 -13 2023 -1 2022 0 0 225 0 225 -1920 2
+-1919 3 -18 18 -18 18 -3 585 -2 584 24 25 25 25 1916 0 1915 0 0 225 0 225
+-2032 -1 -2033 -1 -57 -13z M5510 4170 l0 -1080 290 0 290 0 0 1080 0 1080
+-290 0 -290 0 0 -1080z M6780 5025 l0 -225 944 0 944 0 23 -19 24 -19 3 -836
+2 -836 290 0 290 0 0 830 0 831 25 24 24 25 946 0 945 0 0 225 0 225 -2230 0
+-2230 0 0 -225z M11930 5242 l0 -9 970 -594 969 -594 1 -477 0 -478 290 0 290
+0 0 478 0 477 970 595 970 594 0 8 0 8 -439 0 -439 0 -673 -411 -673 -410 -15
+4 -16 5 -664 406 -665 406 -438 0 -438 0 0 -8z"/></g><g transform="translate(0.000000,561.000000) scale(0.100000,-0.100000)" fill="#FF3F00" stroke="none"><path d="M708 2506 l-56 -13 -56 -27 -55 -27 -43 -42 -43 -42 -45 -85 -45 -85
+0 -325 0 -325 24 -45 23 -45 36 -56 35 -56 56 -35 56 -36 45 -23 45 -24 1756
+-3 1756 -3 24 -25 24 -26 3 -135 4 -135 -13 -29 -12 -30 -21 -14 -20 -15
+-1913 0 -1913 0 2 -217 3 -218 1995 -3 1995 -3 73 11 72 12 54 21 53 22 44 34
+44 34 31 41 31 41 29 65 29 65 0 310 0 310 -32 60 -32 60 -29 43 -29 43 -50
+38 -50 37 -69 25 -69 24 -1736 5 -1737 5 -21 19 -21 19 0 157 0 157 21 27 20
+26 1917 2 1917 3 0 220 0 220 -2025 1 -2025 2 -57 -12z M6092 1443 l3 -1078
+2070 -3 2070 -3 85 12 85 12 50 25 50 25 37 41 38 41 34 57 34 56 12 74 12 73
+-4 225 -4 225 -23 70 -23 70 -24 32 -24 32 0 11 0 12 25 30 25 29 25 83 25 82
+0 224 0 223 -11 66 -11 66 -30 50 -30 50 -37 38 -36 38 -55 34 -55 33 -59 11
+-60 11 -2098 0 -2098 0 2 -1077z m4002 622 l26 -24 0 -160 0 -159 -6 -17 -6
+-16 -29 -14 -28 -15 -1696 0 -1695 0 0 215 0 215 1704 0 1703 0 27 -25z m0
+-880 l26 -24 0 -155 0 -154 -6 -17 -6 -16 -29 -14 -28 -15 -1696 0 -1695 0 0
+210 0 210 1704 0 1703 0 27 -25z M11932 1608 l3 -913 27 -58 27 -58 31 -42 31
+-43 48 -37 49 -36 39 -16 38 -16 68 -15 68 -14 1793 0 1792 0 60 10 59 11 55
+21 55 21 46 36 45 36 33 37 32 37 27 63 27 63 0 910 0 910 -282 3 -283 2 0
+-834 0 -834 -6 -17 -6 -16 -29 -14 -28 -15 -1594 0 -1594 0 -27 21 -26 20 0
+845 0 844 -290 0 -291 0 3 -912z"/></g></symbol>
 <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
 </defs></svg>
 
 <!-- ===== NAV ===== -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand"><b><i></i>CITY&nbsp;SBU</b><span>ZABRZE · UL. JÓZEFA LOMPY 13</span></a>
+    <a href="index.html" class="brand" aria-label="CITY SBU — strona główna"><svg class="logo"><use href="#i-logo"/></svg><span>ZABRZE · UL. JÓZEFA LOMPY 13</span></a>
     <nav class="nav-links" id="navLinks" aria-label="Nawigacja główna">
       <a href="index.html#projekt">Projekt</a>
       <a href="index.html#atuty">Atuty</a>
@@ -354,7 +391,7 @@ footer{background:var(--ink);color:var(--muted-dark);padding:80px 0 34px;border-
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="index.html"><b><i></i>CITY SBU</b></a>
+        <a href="index.html" aria-label="CITY SBU"><svg class="logo"><use href="#i-logo"/></svg></a>
         <p>Nowoczesne moduły magazynowo-biurowe w formacie Small Business Unit. Magazyn, biuro i zaplecze operacyjne w jednym miejscu.</p>
       </div>
       <div><h4>Nawigacja</h4><a href="index.html#projekt">O projekcie</a><a href="index.html#atuty">Atuty</a><a href="index.html#modul">Specyfikacja</a><a href="index.html#dostepnosc">Dostępność</a><a href="realizacja.html">Realizacja inwestycji</a></div>
